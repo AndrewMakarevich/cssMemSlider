@@ -6,6 +6,10 @@ body{
     --picture-fourth-indent: 300%;
     --slider-background-color: rgb(85, 85, 85);
 }
+@font-face {
+    font-family: Rampart;
+    src: url(./fonts/RampartOne-Regular.ttf);
+}
 .slider-container{
     display: flex;
     justify-content: center;
@@ -29,14 +33,18 @@ body{
 .slider-text{
     position: relative;
     width:100%;
-    padding: 10px 0;
-    overflow-x: hidden;
+    height: 100px;
+    overflow-x:hidden;
 }
 .slider-text .text{
     position: absolute;
     width: 100%;
     top:0;
+    font-family: Rampart;
+    color: white;
+    font-size: 25px;
     transition: .3s;
+    margin:0;
 }
 .picture{
     position: absolute;
